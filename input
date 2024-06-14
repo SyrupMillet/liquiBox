@@ -1,0 +1,35 @@
+# Parallelization
+Partition :	1 1 8
+
+# Mesh definition
+Lx : 0.03
+nx : 15
+
+# Fluid properties
+Dynamic viscosity : 0.01
+Density :           1
+Forcing constant :  50.0
+
+Gravity :   -9.81 0 0
+
+# Particle properties
+Particle density :     2000
+Particle diameter :    1e-3
+Number of particles per axis : 10
+Coefficient of restitution : 0.8
+Friction coefficient : 0.1
+
+# Time integration
+Max timestep size : 1e-6
+Max cfl number :    0.9
+
+# Species properties
+Species Numbers : 5
+Species names : Nitrogen Polymer Gas Liquid Wax
+Species gas phase densities : 0.409 0.0 0.38 1.06 0.0
+
+# Inital Mass compositions
+Gas phase inital composition : 1.0 0.0 0.0 0.0 0.0
+
+# Ensight output
+Ensight output period : 1e-3
